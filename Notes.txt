@@ -1,0 +1,55 @@
+- Core Types
+    - number (1, 5.3, 10)
+        - All numbers no differentiation between integers or floats
+    - string
+    - boolean
+    - object
+    - Array
+    - Tuple
+    - Enum
+
+- Typescript only helps in DEVELOPMENT (before compilation)
+
+- Typescript Types vs Javascript Types
+    - Javascript: Dynamic Types
+    - Typescript: Static Types
+
+- Type Casing
+     - Typescript = using LOWERCASE number, string, and boolean usually
+
+- Working with Tuples
+    - Fixed LENGTH and TYPE
+        - Ex: [1, 2]
+        - role: [2, 'author']
+    - Special construct that is only used in Typescript
+        - Looks like an array
+    - See Example 1
+        - role: [number, string];
+            - Showing it can take 2 values; a number and a string
+            - EXCEPTION: when you  push an element in array, typescript doesn't catch error
+
+- Working with Enums
+    - enum { NEW, OLD }
+    - automatically enumerated global constant identifiers
+    - 
+
+
+
+
+
+1 - Tuples
+==========
+const person: {
+    name: string;
+    age: number;
+    hobbies: string[],
+    role: [number, string];
+} = {
+// const person = {
+    name: 'Michael',
+    age: 27,
+    hobbies: ['Sports', 'Cooking'],
+    role: [2, 'author']
+};
+
+console.log(person);
