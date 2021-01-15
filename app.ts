@@ -1,17 +1,14 @@
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[],
-    role: [number, string];
-} = {
-// const person = {
-    name: 'Michael',
-    age: 27,
-    hobbies: ['Sports', 'Cooking'],
-    role: [2, 'author']
-};
+let userInput: unknown;
+let userName: string;
 
-// person.role.push('admin');
-// person.role[1] = 10;
+userInput = 5;
+userInput = 'Mike';
+if (typeof userInput === 'string') {
+    userName = userInput;
+}
 
-console.log(person);
+function generateError(message: string, code: number): never {
+    throw {message, errorCode: code};
+}
+
+generateError('An error occurred!', 500);

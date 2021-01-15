@@ -1,12 +1,7 @@
-function add(a, b, showResult) {
-    if (showResult) {
-        console.log(a + b);
-    }
-    else {
-        return a + b;
-    }
+function add(n1, n2) {
+    return n1 + n2;
 }
-var num1 = 5;
-var num2 = 2.8;
-var printResult = true;
-var result = add(num1, num2, printResult);
+function printResult(num) {
+    console.log('Result: ' + num);
+}
+printResult(add(5, 12));
