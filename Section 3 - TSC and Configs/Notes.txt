@@ -1,0 +1,9 @@
+- outDir
+    - Controls where compiled code goes to 
+        - ex: "outDir": "./dist"
+- rootDir
+    - Controls the folder to start looking for files/folders to compile
+        - ex: "rootDir": "./src"
+- noEmitOnError
+    - Prevents ALL files from being compiled if there is an error in ANY file (like linting almost)
+        - ex: "noEmitOnError": true
