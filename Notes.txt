@@ -27,7 +27,21 @@
         - Doesn't allow you to change/write to the variable (kinda like const)
     - Does not exist in Javascript, purely a typescript thing
 
-- 
+- Inheritance
+    - class ITDepartment extends Department {}
+      ...
+      const IT = new ITDepartment('d1', 'IT');
+
+        - If you don't provide a constructor in the inherited class, then it will automatically use the base class constructor
+          (no super)
+        - If you DO provide a constructor, you WILL need to call super!
+
+            - Ex: class ITDepartment extends Department {
+                      constructor(id: string) {
+                          super(id, 'IT');
+                      }
+                  }
+    - 
 
 
 
